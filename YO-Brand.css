@@ -1,0 +1,149 @@
+/* YO Brand Theme for Obsidian */
+
+.theme-dark {
+  /* Brand Colors */
+  --color-accent: #EF4123; /* Aerospace Orange */
+  --color-accent-hover: #d93820;
+  --color-accent-rgb: 239, 65, 35;
+  
+  --interactive-accent: #EF4123;
+  --interactive-accent-hover: #d93820;
+  
+  /* Call-to-Action */
+  --color-cta: #ECE956; /* Hi-Liter Jet */
+  --color-cta-hover: #e0dd48;
+  
+  /* Base Colors */
+  --background-primary: #181C1C; /* Charcoal */
+  --background-secondary: #3A3E3D; /* Not Quite Black */
+  --background-modifier-border: #EF4123;
+  
+  --text-normal: #FFFBF7; /* Not Quite White */
+  --text-muted: rgba(255, 251, 247, 0.7);
+  --text-faint: rgba(255, 251, 247, 0.5);
+  --text-accent: #EF4123;
+  --text-accent-hover: #d93820;
+  
+  /* UI Elements */
+  --background-modifier-hover: rgba(239, 65, 35, 0.1);
+  --background-modifier-active: rgba(239, 65, 35, 0.2);
+  --background-modifier-selected: rgba(239, 65, 35, 0.15);
+  
+  /* Links */
+  --link-color: #ECE956;
+  --link-color-hover: #e0dd48;
+  --link-unresolved-color: #EF4123;
+  
+  /* Headers */
+  --h1-color: #EF4123;
+  --h2-color: #ECE956;
+  --h3-color: #FFFBF7;
+  --h4-color: #FFFBF7;
+  --h5-color: #FFFBF7;
+  --h6-color: #FFFBF7;
+  
+  /* Code */
+  --code-background: #3A3E3D;
+  --code-normal: #ECE956;
+}
+
+.theme-light {
+  /* Brand Colors */
+  --color-accent: #EF4123;
+  --color-accent-hover: #d93820;
+  --color-accent-rgb: 239, 65, 35;
+  
+  --interactive-accent: #EF4123;
+  --interactive-accent-hover: #d93820;
+  
+  /* Call-to-Action */
+  --color-cta: #ECE956;
+  --color-cta-hover: #e0dd48;
+  
+  /* Base Colors */
+  --background-primary: #FFFBF7; /* Not Quite White */
+  --background-secondary: #FFFFFF;
+  --background-modifier-border: #EF4123;
+  
+  --text-normal: #181C1C; /* Charcoal */
+  --text-muted: #3A3E3D;
+  --text-faint: rgba(24, 28, 28, 0.5);
+  --text-accent: #EF4123;
+  --text-accent-hover: #d93820;
+  
+  /* UI Elements */
+  --background-modifier-hover: rgba(239, 65, 35, 0.05);
+  --background-modifier-active: rgba(239, 65, 35, 0.1);
+  --background-modifier-selected: rgba(239, 65, 35, 0.08);
+  
+  /* Links */
+  --link-color: #EF4123;
+  --link-color-hover: #d93820;
+  --link-unresolved-color: #ECE956;
+  
+  /* Headers */
+  --h1-color: #EF4123;
+  --h2-color: #181C1C;
+  --h3-color: #181C1C;
+  --h4-color: #181C1C;
+  --h5-color: #181C1C;
+  --h6-color: #181C1C;
+  
+  /* Code */
+  --code-background: #FFFFFF;
+  --code-normal: #EF4123;
+}
+
+/* Typography - Using system fonts as fallbacks for Aktiv Grotesk */
+body {
+  --font-text: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-interface: var(--font-text);
+  --font-monospace: "SF Mono", Monaco, "Cascadia Code", "Courier New", monospace;
+}
+
+/* Headers styled to match brand hierarchy */
+.markdown-preview-view h1,
+.cm-header-1 {
+  color: var(--h1-color);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.markdown-preview-view h2,
+.cm-header-2 {
+  color: var(--h2-color);
+  font-weight: 500;
+  font-style: italic;
+}
+
+.markdown-preview-view h3,
+.cm-header-3 {
+  color: var(--h3-color);
+  font-weight: 700;
+}
+
+/* Call-to-Action Buttons */
+button.mod-cta,
+.button-default {
+  background-color: var(--color-cta);
+  color: var(--background-primary);
+  font-weight: 700;
+}
+
+button.mod-cta:hover,
+.button-default:hover {
+  background-color: var(--color-cta-hover);
+}
+
+/* Accent elements */
+.nav-file.is-active,
+.nav-folder.is-active {
+  background-color: rgba(239, 65, 35, 0.1);
+  border-left: 3px solid var(--color-accent);
+}
+
+/* Selection */
+::selection {
+  background-color: rgba(236, 233, 86, 0.3);
+}
